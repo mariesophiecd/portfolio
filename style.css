@@ -104,4 +104,15 @@ input {
 #send-btn:hover {
     background: #7fafc7;
 }
-  
+
+/* Media Queries */
+
+@media screen and (max-width: 990px) {
+    form, .info-box{
+        width: 80%;
+    }
+
+    .orange-section{
+        padding: 5vw 8vw;
+    }
+}
