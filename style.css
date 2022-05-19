@@ -1,3 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;900&family=Pacifico&display=swap');
 
+nav{
+    background-color: #F3AA7F;
+}
+
+nav a{
+    color: #fff;
+    font-size: 1em;
+}
+
+header{
+    background-color: #F6BA59;
+    padding: 8vw;
+}
+
+h1{
+    font-size: 2.8rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h1, h2{
+    color: #fff;
+    font-weight: 900;
+}
+
+.pink-section{
+    background-color: #FCCAD2;
+}
 
