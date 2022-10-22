@@ -1,0 +1,57 @@
+.header-container{
+    font-family: var(--museomoderno);
+    max-height: 750px;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    border: 3px solid white;
+}
+
+h1{
+    font-size: 12rem;
+    line-height: 1em;
+    margin: 8vw auto 0vw;
+    border: 3px solid white;
+
+}
+
+h2{
+    font-size: 4.5rem;
+    margin: auto;
+    border: 3px solid white;
+
+}
+
+h1, h2{
+    text-transform: uppercase;
+    line-height: 1em;
+    font-weight: 900;
+}
+
+h3{
+    font-family: var(--mulish);
+    font-weight: 400;
+    font-size: 2.2rem;
+}
+
+.contact-btn{
+    background-color: #FF72B1;
+    color: #2A3439;
+    font-family: var(--mulish);
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 16px 28px;
+    border-radius: 35px;
+    border: none;
+    margin: 3vw auto;
+}
+
+.contact-btn:hover{
+    background-color: #FFA1CB;
+
+}
+
+#highlight{
+    color: #FFA1CB;
+}

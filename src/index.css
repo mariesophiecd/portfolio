@@ -4,6 +4,7 @@ body {
   margin: 0;
   padding: 0;
   background-color: #2A3439;
+  color: white;
 }
 
 code {
@@ -11,3 +12,7 @@ code {
     monospace;
 }
 
+:root{
+  --museomoderno: 'MuseoModerno', display;
+  --mulish: 'Mulish', sans-serif;
+}
