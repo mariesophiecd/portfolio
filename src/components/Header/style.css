@@ -45,11 +45,11 @@ h3{
     border-radius: 35px;
     border: none;
     margin: 3vw auto;
+    cursor: pointer;
 }
 
 .contact-btn:hover{
     background-color: #FFA1CB;
-
 }
 
 #highlight{

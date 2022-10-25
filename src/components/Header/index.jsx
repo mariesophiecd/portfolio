@@ -11,14 +11,7 @@ export default function Header() {
       <h1>Creative</h1>
       <h2>Front-End <span id='highlight'>Developer</span></h2>
       <h3>I build smart, low carbon websites and apps.</h3>
-      {/* <div> */}
-      <button className='contact-btn' onClick={() => navigate('/contact')}>Work with Me</button>
-      {/* </div> */}
-
-
-
-
-        
+      <button className='contact-btn' onClick={() => navigate('/contact')}>Work with Me</button>        
     </div>
   )
 }
