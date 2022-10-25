@@ -1,6 +1,7 @@
 import React from 'react';
-import Header from '../../components/Header';
 import Connect from '../../components/Connect';
+import Header from '../../components/Header';
+import Projects from '../../components/Projects';
 
 export default function Home() {
   return (
@@ -10,6 +11,9 @@ export default function Home() {
       </div>
       <div>
         <Connect />
+      </div>
+      <div>
+        <Projects />
       </div>
     </div>
   )
