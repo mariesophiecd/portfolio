@@ -12,23 +12,26 @@ export default function Projects(){
 
     return (
         <div className='projects-container'>
-            <h2 className='projects-h2'><span className='vertical-h2'>Latest</span> Works</h2>
-            <div>
-                <img onClick={() => navigate('/project1')} src={turretTesting} alt='Turret Testing Project' />
-                <h3>Project #1</h3>
-                <p>Turret Testing - post training project with futureproof </p>
+            <h2 className='vertical-h2'>Latest</h2>
+            <h2 className='pink-h2'>Works</h2>
+            <div className='projects-section'>
+                <div className='first-row'>
+                    <img onClick={() => navigate('/project1')} src={turretTesting} alt='Turret Testing Project' />
+                    <h3 className='project-num'>Project #1</h3>
+                    <p className='project-name'>Turret Testing - post training project with futureproof </p>
 
-                <img onClick={() => navigate('/project2')} src={enviromates} alt='' />
-                <h3>Project #2</h3>
-                <p>Environmental app - final project for futureproof </p>
+                    <img onClick={() => navigate('/project2')} src={enviromates} alt='' />
+                    <h3 className='project-num'>Project #2</h3>
+                    <p className='project-name'>Environmental app - final project for futureproof </p>
+                </div>
             </div>
-            <div>
+            <div className='second-row'>
                 <img onClick={() => navigate('/project3')} src={questionRoulette} alt='' />
-                <h3>Project #3</h3>
-                <p>Question Roulette - quiz app project for futureproof </p>
+                <h3 className='project-num'>Project #3</h3>
+                <p className='project-name'>Question Roulette - quiz app project for futureproof </p>
                 <img onClick={() => navigate('/project4')} src={pinkola} alt='' />
-                <h3>Project #4</h3>
-                <p>Pinkola - UX Design project for a life coaching website</p>
+                <h3 className='project-num'>Project #4</h3>
+                <p className='project-name'>Pinkola - UX Design project for a life coaching website</p>
             </div>
         </div>
     )

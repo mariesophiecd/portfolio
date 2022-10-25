@@ -1,7 +1,4 @@
 .projects-container{
-    display: grid;
-    grid-template-columns: 10% 45% 45%;
-    grid-auto-rows: minmax(50px, auto);
     padding: 1vw 6vw;
 }
 
@@ -9,14 +6,38 @@
     font-family: var(--museomoderno);
     font-size: 3rem;
 }
+.vertical-h2{
+    position: relative;
+    font-family: var(--museomoderno);
+    left: 2vw;
+    /* top: 30vw; */
+    transform: rotate(-90deg);
+}
 
-h3{
+.pink-h2{
+    position: absolute;
+    font-family: var(--museomoderno);
+    color: #FFA1CB;
+}
+
+.projects-section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+}
+/* 
+.first-row{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+} */
+
+.project-num{
     font-family: var(--museomoderno);
     font-weight: 800;
     text-transform: uppercase;
 }
 
-p{
+.project-name{
     font-family: var(--mulish);
     font-size: 1.2rem;
     font-weight: 500;
