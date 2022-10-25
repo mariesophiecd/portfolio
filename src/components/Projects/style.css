@@ -1,0 +1,23 @@
+.projects-container{
+    display: grid;
+    grid-template-columns: 10% 45% 45%;
+    grid-auto-rows: minmax(50px, auto);
+    padding: 1vw 6vw;
+}
+
+.projects-h2{
+    font-family: var(--museomoderno);
+    font-size: 3rem;
+}
+
+h3{
+    font-family: var(--museomoderno);
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: var(--mulish);
+    font-size: 1.2rem;
+    font-weight: 500;
+}
