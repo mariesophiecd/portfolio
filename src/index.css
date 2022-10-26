@@ -15,4 +15,7 @@ code {
 :root{
   --museomoderno: 'MuseoModerno', display;
   --mulish: 'Mulish', sans-serif;
+  --typewriterSpeed: 3s;
+  --blinkSpeed: 900ms;
+  --steps: 8;
 }
