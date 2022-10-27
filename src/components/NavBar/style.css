@@ -2,21 +2,20 @@
     position: sticky;
     font-family: var(--mulish);
     font-weight: 500;
-    border: 3px solid white;
 }
 
 .container{
+    position: sticky;
+
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1;
-    padding: 1vw 6vw;
-    border: 3px solid white;
+    padding: 1vw 8vw;
 }
 
 .logo{
     cursor: pointer;    
     width: 300px;
-    border: 3px solid white;
 }
 
 .menu{
@@ -37,13 +36,11 @@
     display: grid;
     grid-column-start: 2;
     justify-items: end;
-    border: 3px solid white;
 }
 
 .menu-display{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    border: 3px solid white;
     grid-gap: 10px;
 }
 

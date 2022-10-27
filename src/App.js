@@ -8,7 +8,9 @@ function App() {
   return (
     <div className='App'>
       <header className='App-header'>
-        <NavBar />
+        <div className='navigation'>
+          <NavBar />
+        </div>
         <Routes> 
           <Route path='/' element={<Pages.Home />} />
           <Route path='/about' element={<Pages.About />} />

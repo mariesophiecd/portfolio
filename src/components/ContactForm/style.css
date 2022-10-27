@@ -1,0 +1,64 @@
+.form-container{
+    background-color: transparent;
+}
+
+form{
+    display: grid;
+    padding: 6vw;
+}
+
+.form-input{
+    background: transparent;
+    height: 2rem;
+    border-radius: 35px;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid #FF72B1;
+    color: #2A3439;
+    padding: 0.5rem 2rem;
+    margin-bottom: 2vw;
+}
+
+.form-input::placeholder{
+    color: #2A3439;
+    transition: color 0.3s ease;
+}
+
+.form-input:focus::placeholder{
+    color: transparent;
+}
+
+textarea{
+    height: 6rem;
+    border-radius: 35px;
+    outline: none;
+    border: none;
+    resize: none;
+    border-bottom: 2px solid #FF72B1;
+    font-family: var(--mulish);
+    color: #2A3439;
+    padding: 1.5rem 2rem;
+    margin-bottom: 2vw;
+}
+
+.submit-btn{
+    background-color: #2A3439;
+    border-radius: 35px;
+    outline: none;
+    border: none;
+    color: white;
+    font-size: 1.3rem;
+    font-weight: 800;
+    font-family: var(--museomoderno);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 1rem 2rem;
+}
+
+.submit-btn:hover{
+
+}
+
+.highlight-dark{
+    color: #2A3439;
+}

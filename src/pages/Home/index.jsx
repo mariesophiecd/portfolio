@@ -5,7 +5,7 @@ import Projects from '../../components/Projects';
 
 export default function Home() {
   return (
-    <div>
+    <div className='home-container'>
       <div>
         <Header />
       </div>

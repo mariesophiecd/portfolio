@@ -1,0 +1,29 @@
+.contact-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-content{
+    display: grid;
+    background-color: var(--bg-pink);
+    padding: 1vw 5vw 1vw 8vw;
+    align-content: center;
+}
+
+.contact-h2{
+    font-family: var(--museomoderno);
+    font-size: 6rem;
+}
+
+.contact-p{
+    font-family: var(--mulish);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.contact-form{
+    display: grid;
+    align-content: center;
+    background-color: white;
+    padding: 1vw 8vw 1vw 5vw;
+}
