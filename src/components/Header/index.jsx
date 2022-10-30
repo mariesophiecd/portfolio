@@ -8,9 +8,9 @@ export default function Header() {
 
   return (
     <div className='header-container'>
-      <h1>Creative</h1>
-      <h2>Front-End <span id='highlight'>Developer</span></h2>
-      <h3>I build smart, low carbon websites and apps.</h3>
+      <h1 className='home-h1'>Creative</h1>
+      <h2 className='home-h2'>Front-End <span id='highlight'>Developer</span></h2>
+      <h3 className='home-h3'>I build smart, low carbon websites and apps.</h3>
       <button className='contact-btn' onClick={() => navigate('/contact')}>Work with Me</button>        
     </div>
   )

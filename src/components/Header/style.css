@@ -7,13 +7,13 @@
     justify-items: center;
 }
 
-h1, h2{
+.home-h1, .home-h2{
     text-transform: uppercase;
     line-height: 1em;
     font-weight: 900;
 }
 
-h1{
+.home-h1{
     position: relative;
     font-size: 12rem;
     line-height: 1em;
@@ -22,8 +22,8 @@ h1{
     width: max-content;
 }
 
-h1::before,
-h1::after{
+.home-h1::before,
+.home-h1::after{
     content: '';
     position: absolute;
     top: 0;
@@ -32,13 +32,13 @@ h1::after{
     left: 0;
 }
 
-h1::before{
+.home-h1::before{
     background-color: #2A3439;
     animation: 
         typewriter var(--typewriterSpeed) steps(var(--steps)) 1s forwards;
 }
 
-h1::after{
+.home-h1::after{
     width: 0.08em;
     background: #FFA1CB;
     animation: 
@@ -58,7 +58,7 @@ h1::after{
     }
 }
 
-h2{
+.home-h2{
     font-size: 4.5rem;
     margin: auto;
     opacity: 0;
@@ -73,7 +73,7 @@ h2{
     }
 }
 
-h3{
+.home-h3{
     font-family: var(--mulish);
     font-weight: 400;
     font-size: 2.2rem;

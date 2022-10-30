@@ -22,13 +22,14 @@ export default function ContactForm(){
       .then(() => alert('Success!'))
       .catch(error => alert(error))
     e.preventDefault()
+    setState({ name: '', object: '', email: '', content: '' })
   }
 
   return (
     <div className='form-container'>
       <form
         className='contactForm'
-        action='/confirmation-page' 
+        action='/confirmation-page.html' 
         method='POST'
         name='contactform'
         onSubmit={handleSubmit}>
@@ -65,7 +66,6 @@ export default function ContactForm(){
         </textarea>
         <input type='submit' className='submit-btn' value='Send !' />
       </form>
-    
     </div>
   )
 }
