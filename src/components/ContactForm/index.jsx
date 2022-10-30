@@ -37,9 +37,9 @@ export default function ContactForm(){
 
   return (
     <div className='form-container'>
-      <form 
+      <form
         className='contactForm'
-        action='mailto:mariesophie.cduran@gmail.com' 
+        action='/confirmation-page' 
         method='POST'
         name='contactform'
         onSubmit={handleSubmit}>
