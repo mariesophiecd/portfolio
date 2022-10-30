@@ -38,6 +38,7 @@
     font-family: var(--museomoderno);
     font-size: 2.5rem;
     text-align: center;
+    padding-bottom: 1vw;
 }
 
 .about-p{
@@ -45,9 +46,6 @@
     font-size: 1.8rem;
     font-weight: 600;
     line-height: 0.5em;
-
-    /* text-align: center; */
-
 }
 
 section{
@@ -62,5 +60,14 @@ section{
 
 .my-achievements{
     background-color: #FFA1CB;
+}
 
+.my-contact{
+    background-color: #FFCEE4;
+}
+
+.col-p{
+    padding: 0 4vw;
+    font-family: var(--mulish);
+    font-size: 1rem;
 }
