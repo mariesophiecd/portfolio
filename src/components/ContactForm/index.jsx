@@ -1,38 +1,27 @@
 import React, { useState } from 'react';
 import './style.css';
 
+const encode = (data) => {
+  return Object.keys(data)
+    .map(key => encodeURIComponent(key) + '=' + encodeURIComponent(data[key])).join('&');
+}
+
 export default function ContactForm(){
+  
+  const [state, setState] = useState({ name: '', object:'', email: '', content: '' })
 
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [object, setObject] = useState('');
-  const [content, setContent] = useState('');
-  const [message, setMessage] = useState([]);
+  const handleChange = e =>
+    setState({ ...state, [e.target.name]: e.target.value })
 
-  function handleName(e){
-    setName(e.target.value);
-  }
-
-  function handleEmail(e){
-    setEmail(e.target.value);
-  }
-
-  function handleObject(e){
-    setObject(e.target.value);
-  }
-
-  function handleContent(e){
-    setContent(e.target.value);
-  }
-
-  function handleSubmit(e){
-    e.preventDefault();
-    const newMessage = {yourName: name, yourEmail: email, yourObject: object, yourContent: content};
-    setMessage([...message, newMessage]);
-    setName('');
-    setEmail('');
-    setObject('');
-    setContent('');
+  const handleSubmit = e => {
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: encode({ 'form-name': 'contactForm', ...state })
+    })
+      .then(() => alert('Success!'))
+      .catch(error => alert(error))
+    e.preventDefault()
   }
 
   return (
@@ -52,27 +41,27 @@ export default function ContactForm(){
           name='name' 
           placeholder='Your name'
           className='form-input' 
-          value={name} 
-          onChange={handleName} />
+          value={state.name} 
+          onChange={handleChange} />
         <input required 
           type='email' 
           name='email'
           placeholder='Your email' 
           className='form-input' 
-          value={email} 
-          onChange={handleEmail} />
+          value={state.email} 
+          onChange={handleChange} />
         <input required 
           type='text' 
           name='object'
           placeholder='Object' 
           className='form-input' 
-          value={object} 
-          onChange={handleObject} />
+          value={state.object} 
+          onChange={handleChange} />
         <textarea required 
-          name='message' 
+          name='content' 
           placeholder='Type your message here'
-          value={content} 
-          onChange={handleContent}>
+          value={state.content} 
+          onChange={handleChange}>
         </textarea>
         <input type='submit' className='submit-btn' value='Send !' />
       </form>
