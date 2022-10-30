@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useState } from 'react';
 import ContactForm from '../../components/ContactForm';
 import './style.css';
 
-export default function Contact() {
+export default function Contact({name, email, object, content}) {
+
   return (
     <div className='contact-container'>
       <div className='contact-content'>
@@ -10,7 +11,7 @@ export default function Contact() {
         <p className='contact-p'>I'm open to work at the moment. So if you like what you see, drop me a message below.</p>
       </div> 
       <div className='contact-form'> 
-        <ContactForm />
+        <ContactForm name={name} email={email} object={object} content={content} />
       </div>
     </div>
   )
